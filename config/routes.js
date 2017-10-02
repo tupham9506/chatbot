@@ -34,6 +34,15 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  'get /chatbot': {
+    controller: "FBController",
+    action: "vertification"
+  },
+  'post /chatbot': {
+    controller: "FBController",
+    action: "getMsg"
   }
 
   /***************************************************************************
